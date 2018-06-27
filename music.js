@@ -119,7 +119,7 @@ function getPlaylist() {
     $('#recommendation-wrapper').removeClass('hidden');
 
     playlist.forEach((song) => {
-      $('#recommendations-list').append($(`<li class="list-group-item" result-type="song" result-id="${song.trackId}" result-artist-id="${song.artistId}">
+      $('#recommendations-list').append($(`<li class="list-group-item">
                           <img src="${song.artworkUrl60}" class="music-artwork">
                           <div class="music-info">
                              <h4>${song.trackName}</h4>
