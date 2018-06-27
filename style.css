@@ -1,0 +1,36 @@
+.hidden{
+    display: none;
+}
+
+#result-list {
+    overflow: auto;
+    position: fixed; /* Sit on top of the page content */
+    height: 25%; /* Full height (cover the whole page) */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+div.music-info{
+    margin-left: 1em;
+    display: inline-block;
+}
+
+img.music-artwork{
+    vertical-align: top;
+    display: inline-block;
+}
+
+span.artist-name{
+    color: gray;
+}
+
+h1.row-title{
+    display: inline-block;
+}
+
+button.row-btn{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    float: right;
+    clear: right;
+}

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>My Musicologist</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" >
   </head>
   <body>
     <div>
@@ -21,36 +22,45 @@
           <div class="col col-md-2 hidden-sm hidden-xs"></div>
           <div class="col col-xs-12 col-md-8">
             <div class="row">
-              <div class="col col-xs-12">
-                <div class="input-group">
-                  <input type="text" class="form-control" id="musicField" placeholder="Song Name, Artist...">
-                  <span class="input-group-btn">
-                    <button id="addButton" class="btn btn-default" type="button">Add!</button>
-                  </span>
+              <div class="col col-xs-12" id="input-wrapper">
+                <input type="text" class="form-control" id="music-field" placeholder="Song Name, Artist...">
+                <ul class="list-group hidden " id="result-list"></ul>
+              </div>
+            </div>
+            <div id="interest-wrapper">
+              <div class="row">
+                <h1 class="row-title">My Music Interests</h1>
+                <button id="clear-btn" class="btn btn-default btn-lg row-btn hidden">Clear list</button>
+              </div>
+              <div class="row">
+                <ul class="list-group " id="interests-list">
+                </ul>
+              </div>
+              <div class="row">
+                <div class="col col-xs-12 text-center">
+                  <button id="get-playlist-btn" class="btn btn-default btn-lg" disabled>Get Playlist</button>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <h1>My Music Interests</h1>
-            </div>
-            <div class="row">
-              <ul class="list-group info">
-              </ul>
+            <div id="recommendation-wrapper" class="hidden">
+              <div class="row">
+                <h1 class="row-title">My Music Recommendation</h1>
+                <button id="choose-again-btn" class="btn btn-default btn-lg row-btn">Choose Again</button>
+              </div>
+              <div class="row">
+                <ul class="list-group " id="recommendations-list">
+                </ul>
+              </div>
             </div>
           </div>
           <div class="col col-md-2 hidden-sm hidden-xs"></div>
         </div>
-        <div class="row">
-          <div class="col col-xs-12 text-center">
-            <button id="getPlaylistBtn" class="btn btn-default btn-lg">Get Playlist</button>
-          </div>
-        </div>
+
       </div>
-    <script
-  src="http://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
     <script src="music.js"></script>
   </body>
 </html>
