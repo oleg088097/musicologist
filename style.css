@@ -34,3 +34,10 @@ button.row-btn{
     float: right;
     clear: right;
 }
+
+a.right{
+    padding-top: 10px;
+    vertical-align: bottom;
+    float:right;
+    clear:right;
+}
